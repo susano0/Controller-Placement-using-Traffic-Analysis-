@@ -10,29 +10,29 @@ def myNet():
     net = Mininet(topo=topo, host=CPULimitedHost, link=TCLink)
     
        
-   info( '*** Adding controller\n' )  
+    info( '*** Adding controller\n' )  
      
-   c0=net.addController(name='c0',  
+    c0=net.addController(name='c0',  
             controller=RemoteController,  
             ip='127.0.0.1',  
             port=6633)  
      
-   c1=net.addController(name='c1',  
+    c1=net.addController(name='c1',  
             controller=RemoteController,  
             ip='127.0.0.2',  
             port=6634)  
-   c2=net.addController(name='c2',  
+    c2=net.addController(name='c2',  
             controller=RemoteController,  
             ip='127.0.0.3',  
             port=6635)  
-   c3=net.addController(name='c3',  
+    c3=net.addController(name='c3',  
             controller=RemoteController,  
             ip='4',  
             port=6636)  
  
 
-   
- # add nodes, switches first...
+    
+    # add nodes, switches first...
     RockHill = net.addSwitch( 's0' )
     Charlotte = net.addSwitch( 's1' )
     Bethune = net.addSwitch( 's2' )
