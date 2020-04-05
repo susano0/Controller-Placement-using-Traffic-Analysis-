@@ -13,7 +13,7 @@ from mininet.util import dumpNodeConnections
 
 def myNet():
 
-    net = Mininet(topo=topo, host=CPULimitedHost, link=TCLink)
+    net = Mininet(topo=None, host=CPULimitedHost, link=TCLink)
     
        
     info( '*** Adding controller\n' )  
